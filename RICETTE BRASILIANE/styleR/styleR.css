@@ -1,0 +1,240 @@
+/*******GENERAL*****/
+body {
+  background-color: #f7f8b3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#main-ricette {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.active {
+  background: rgba(55, 135, 255, 0.495);
+  border-radius: 3px;
+}
+
+/*******NAV********/
+header {
+  text-align: center;
+  background-color: rgb(46, 108, 51);
+  padding: 10px 0 0 0;
+  margin: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: rgb(57, 79, 179);
+  padding: 5px 10px 5px 10px;
+  margin: auto;
+
+}
+
+
+nav li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+}
+
+
+nav li a:hover {
+  color: rgba(140, 194, 248, 0.498);
+
+}
+
+nav li {
+  display: inline-block;
+
+}
+
+.title {
+  padding: 5px 10px 10px 10px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  word-spacing: 0.5em;
+}
+
+
+
+/******MAIN-CONTENT*******/
+#main-content {
+  width: 100%;
+  text-align: center;
+  padding: 70px 20px 40px 20px;
+}
+
+.container p {
+  text-align: center;
+  padding: 40px 200px 20px 200px;
+}
+
+.title-content {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+
+
+/****SCREEN MIN 768PX*****/
+
+@media only screen and (min-width:768px) {
+  /***GALLERY****/
+
+
+  #gallery {
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+  }
+
+  #gallery img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .item {
+    width: 50%;
+    float: left;
+    padding: 15px;
+  }
+
+  .picture {
+    line-height: 0;
+  }
+
+  .caption {
+    background-color: rgba(146, 141, 141, 0.677);
+    padding: 10px;
+    width: 350px;
+  }
+
+  .caption p {
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+
+  nav li a {
+    transition: background .3s;
+  }
+
+  #gallery .item {
+    transition: opticity .3s;
+  }
+
+  #gallery .item:hover {
+    opacity: .7;
+  }
+
+}
+
+
+
+/******SCREEN MAX 767******/
+@media only screen and (max-width:767px) {
+
+  /*****GALLERY****/
+  #gallery img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .item {
+    text-align: center;
+    padding: 15px;
+    width: 70%;
+    margin: 0 auto;
+
+  }
+
+  #gallery {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+
+  .caption {
+    background-color: rgba(146, 141, 141, 0.677);
+    padding: 7px;
+  }
+
+  .caption p {
+    margin: 0;
+    text-align: center;
+    color: black;
+  }
+
+  .picture {
+    line-height: 0;
+  }
+
+}
+
+
+
+/******MAIN-CONTENT-RICETTA*****/
+
+
+#main-content-ricetta {
+  padding: 20px 40px 20px 40px;
+  text-align: justify;
+}
+
+.title1 {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+ol li {
+  padding-bottom: 10px;
+}
+
+
+
+.preparazione {
+  width: 700px;
+}
+
+/******FOOTER*******/
+
+footer {
+  text-align: center;
+  margin: auto;
+  padding: 60px 40px 20px 40px;
+}
+
+.contatto img {
+
+  width: 40px;
+}
+
+.contatto img {
+  padding-top: 200px;
+
+}
+
+
+#copyright {
+  padding-top: 20px;
+}
